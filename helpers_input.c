@@ -199,7 +199,7 @@ int check_args(char **args)
 				return (create_error(&args[m], 2));
 			nex = args[m + 1];
 			if (nex && (nex[0] == ';' || nex[0] == '&' || nex[0] == '|'))
-				return (create_error(&args[i + 1], 2));
+				return (create_error(&args[m + 1], 2));
 		}
 	}
 	return (0);
